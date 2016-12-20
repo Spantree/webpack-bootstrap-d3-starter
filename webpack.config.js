@@ -3,6 +3,7 @@ module.exports = {
         'bootstrap-loader',
         './js/app.js'
     ],
+    devtool: 'source-map',
     output: {
         path: __dirname,
         filename: "bundle.js"
