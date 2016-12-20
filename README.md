@@ -6,9 +6,20 @@ Includes:
  * Bootstrap 3
  * D3
 
+## Using the starter
+To use this as a starter for a new project, replace `dirformynewrepo`
+and execute in the following commands:
+
+```
+git clone --depth=1 --branch=master git://someserver/somerepo dirformynewrepo
+rm -rf !$/.git
+```
+
 ## Installing and usage
 
-```npm install```
+```
+npm install
+```
 
 Then, simply run:
 
