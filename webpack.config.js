@@ -4,6 +4,9 @@ module.exports = {
         './js/app.js'
     ],
     devtool: 'source-map',
+    eslint: {
+        configFile: './.eslintrc'
+    },
     output: {
         path: __dirname,
         filename: "bundle.js"
@@ -13,10 +16,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /(node_modules)/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['es2015']
-                }
+                loaders: ['babel-loader?presets[]=es2015', 'eslint-loader']
             },
             { test: /\.css$/, loader: 'style!css' },
             { test: /\.scss$/, loader: 'style-loader!css-loader!resolve-url-loader!sass-loader'},

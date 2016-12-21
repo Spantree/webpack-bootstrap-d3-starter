@@ -35,7 +35,3 @@ to refresh the page manually.
 See `js/app.js` for an example of how to load a stylesheet and pull in
 d3
 
-
-### TODOS
-
- - [ ] Add a linter
