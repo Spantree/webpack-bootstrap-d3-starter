@@ -39,4 +39,3 @@ d3
 ### TODOS
 
  - [ ] Add a linter
- - [ ] Add editor config
